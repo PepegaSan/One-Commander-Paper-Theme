@@ -14,15 +14,13 @@ Actually, I just recolored "dark theme by Milos Paripovic" to match this theme c
 
 ### Fork (PepegaSan)
 
-Dieses Repository ist ein **[Fork](https://github.com/PepegaSan/One-Commander-Paper-Theme)** des Originals von **Abod1960** · Upstream: [Abod1960/One-Commander-Paper-Theme](https://github.com/Abod1960/One-Commander-Paper-Theme).
+This repository is a **[fork](https://github.com/PepegaSan/One-Commander-Paper-Theme)** of the original by **Abod1960**. Upstream: [Abod1960/One-Commander-Paper-Theme](https://github.com/Abod1960/One-Commander-Paper-Theme).
 
-**Änderungen in diesem Fork**
+**Changes in this fork**
 
-- **`The Theme/Paper/Paper.xaml`:** Fehlende Theme-Keys aus der offiziellen **Dark**-Vorlage von **One Commander 3.108** ergänzt (u. a. Tag-Farben, Fenster-Rand und Padding für maximierte Fenster, Kontextmenü-/Flyout-Stile, Scrollbar „pressed“, Icon-Button-Hintergrund, Text-Overlay für die Rasteransicht). Die **Paper-Farben** bleiben erhalten.
+- **`The Theme/Paper/Paper.xaml`:** Merged in missing theme keys from the stock **Dark** theme shipped with **One Commander 3.108** (including tag colors, window border and padding for maximized windows, context menu and flyout styling, scrollbar pressed state, icon button background, text overlay for grid view). The original **Paper** color palette is unchanged.
 
-*English:* Missing keys from stock OC **3.108** `Dark.xaml` merged into Paper while keeping the Paper palette.
-
-**Install:** Themes und Ressourcen gehören unter **`%LocalAppData%\OneCommander\`** (`Themes`, `Resources\FolderIcons`, …) — am einfachsten über **Einstellungen → Theme** in One Commander öffnen.
+**Install:** Place themes and resources under **`%LocalAppData%\OneCommander\`** (e.g. `Themes`, `Resources\FolderIcons`, …). The easiest way is to open those folders from One Commander via **Settings → Theme**.
 
 ---
  
