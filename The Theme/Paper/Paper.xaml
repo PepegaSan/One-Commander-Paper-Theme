@@ -12,6 +12,7 @@
         Theme Author: "Abod1960" 
         based on paper theme by niivu " https://www.deviantart.com/niivu/art/Paper-for-Windows-10-881587608 " color palette...
         Actually, I just recolored "dark theme by Milos Paripovic" to match this theme color palette...
+        Merged with One Commander 3.108 Dark.xaml keys (tags, window chrome, menus, scrollbar pressed, overlays).
         
         Copy the whole Theme folder from /Themes/ and do mods there (themes with same name as official ones will be overwritten on program update)
         
@@ -30,8 +31,11 @@
     -->
 
     <Thickness x:Key="WindowPadding">1,1,0,1</Thickness>
+    <Thickness x:Key="WindowPaddingMaximized">0,-2,0,0</Thickness>
     <!--  margin/padding in XAML is in order Left,Top,Right,Bottom  -->
 
+    <SolidColorBrush x:Key="WindowBorderBrush" Color="{DynamicResource SystemAccentColor}" />
+    <Thickness x:Key="WindowBorderThickness">1</Thickness>
 
     <s:Double x:Key="WindowAcrylicTintOpacity">0.84</s:Double>
     <SolidColorBrush x:Key="WindowAcrylicTintBrush" Color="#d60D0B0E" />
@@ -60,6 +64,9 @@
 
     <!--  Secondary Text, like extension in File, or path in Favorites  -->
     <SolidColorBrush x:Key="TextUnimportantBrush" Color="#cacaca" />
+
+    <!--  For grid view only for now. I use value from CurrentFolderPanelBackgroundBrush (unless transparent) and add BE in front to give it transparency  -->
+    <SolidColorBrush x:Key="TextBackgroundOverlayBrush" Color="#BE495359" />
 
 
     <!--  Sidebar - Favorites  -->
@@ -237,6 +244,14 @@
         Color="Black" />
     <Thickness x:Key="ShadowThickness">40,40,40,50</Thickness>
 
+    <Style x:Key="ContextMenuBorder" TargetType="Border">
+        <!--  This is not Shell Context menu - no way to change that yet  -->
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Background" Value="{DynamicResource DialogBackgroundBrush}" />
+        <Setter Property="Padding" Value="0,4,0,4" />
+        <Setter Property="CornerRadius" Value="4" />
+    </Style>
+
     <!--  For now only to control the corner radius; may be removed in the future  -->
     <Style x:Key="ItemSelectionBorder" TargetType="{x:Type Border}">
         <Setter Property="CornerRadius" Value="4,0,0,4" />
@@ -354,6 +369,7 @@
     <SolidColorBrush x:Key="ScrollBarTrackBrush" Color="#20888888" />
     <SolidColorBrush x:Key="ScrollBarThumbBrush" Color="#495359" />
     <SolidColorBrush x:Key="ScrollBarThumbHoverBrush" Color="#78909C" />
+    <SolidColorBrush x:Key="ScrollBarThumbPressedBrush" Color="#c078909C" />
 
     <!--  For background overlay when popup is open  -->
     <SolidColorBrush
@@ -468,6 +484,7 @@
 
 
     <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#4C595F" />
+    <SolidColorBrush x:Key="IconButtonBackgroundBrush" Color="#4C595F" />
     <SolidColorBrush x:Key="ButtonBackgroundPointerOverBrush" Color="#78909C" />
     <SolidColorBrush x:Key="ButtonBackgroundPressedBrush" Color="#4C595F" />
     <SolidColorBrush x:Key="ButtonBackgroundDisabledBrush" Color="#6A7C85" />
@@ -513,6 +530,15 @@
         <GradientStop Offset="0" Color="#00000000" />
     </LinearGradientBrush>
 
+    <SolidColorBrush x:Key="MenuFlyoutPresenterBackground" Color="#4C595F" />
+
+    <SolidColorBrush x:Key="TagRedBrush" Color="#ef7063" />
+    <SolidColorBrush x:Key="TagOrangeBrush" Color="#eda95d" />
+    <SolidColorBrush x:Key="TagYellowBrush" Color="#efcf68" />
+    <SolidColorBrush x:Key="TagGreenBrush" Color="#88c866" />
+    <SolidColorBrush x:Key="TagBlueBrush" Color="#6fb8ef" />
+    <SolidColorBrush x:Key="TagPurpleBrush" Color="#c78edd" />
+    <SolidColorBrush x:Key="TagGrayBrush" Color="#7c7c7f" />
 
 
 </ResourceDictionary>   

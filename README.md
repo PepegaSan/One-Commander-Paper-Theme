@@ -9,6 +9,22 @@ A theme for [one commander](http://www.onecommander.com) app.
 Based on [Paper theme by niivu](https://www.deviantart.com/niivu/art/Paper-for-Windows-10-881587608) color palette...
  
 Actually, I just recolored "dark theme by Milos Paripovic" to match this theme color palette...
+
+---
+
+### Fork (PepegaSan)
+
+Dieses Repository ist ein **[Fork](https://github.com/PepegaSan/One-Commander-Paper-Theme)** des Originals von **Abod1960** · Upstream: [Abod1960/One-Commander-Paper-Theme](https://github.com/Abod1960/One-Commander-Paper-Theme).
+
+**Änderungen in diesem Fork**
+
+- **`The Theme/Paper/Paper.xaml`:** Fehlende Theme-Keys aus der offiziellen **Dark**-Vorlage von **One Commander 3.108** ergänzt (u. a. Tag-Farben, Fenster-Rand und Padding für maximierte Fenster, Kontextmenü-/Flyout-Stile, Scrollbar „pressed“, Icon-Button-Hintergrund, Text-Overlay für die Rasteransicht). Die **Paper-Farben** bleiben erhalten.
+
+*English:* Missing keys from stock OC **3.108** `Dark.xaml` merged into Paper while keeping the Paper palette.
+
+**Install:** Themes und Ressourcen gehören unter **`%LocalAppData%\OneCommander\`** (`Themes`, `Resources\FolderIcons`, …) — am einfachsten über **Einstellungen → Theme** in One Commander öffnen.
+
+---
  
  
 ## 🧾 Instructions
