@@ -317,9 +317,9 @@
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Margin" Value="-2,6,-2,0" />
          These 5 if you want just line separated tabs-->
-        <Setter Property="Background" Value="#4C595F" />
+        <Setter Property="Background" Value="#363F42" />
         <Setter Property="Padding" Value="4,0,0,0" />
-        <Setter Property="Margin" Value="1,2,1,0" />
+        <Setter Property="Margin" Value="1,4,1,0" />
     </Style>
 
     <Style x:Key="TabItemHoverBorder" TargetType="{x:Type Border}">
@@ -328,15 +328,16 @@
         <!--  Uncomment for border around non-active tab  -->
         <!--<Setter Property="BorderThickness" Value="1,1,0,1"/>
                     <Setter Property="BorderBrush" Value="Transparent" />-->
-        <Setter Property="Background" Value="#6A7C85" />
+        <Setter Property="Background" Value="#566268" />
         <Setter Property="Padding" Value="5,2,0,0" />
-        <Setter Property="Margin" Value="0,2,0,0" />
+        <Setter Property="Margin" Value="0,3,0,0" />
         <Setter Property="Effect" Value="{DynamicResource HoverItemEffect}" />
     </Style>
 
     <Style x:Key="TabItemSelectedBorder" TargetType="{x:Type Border}">
         <Setter Property="CornerRadius" Value="4,4,0,0" />
-        <!--<Setter Property="BorderThickness" Value="2,2,2,0" />-->
+        <Setter Property="BorderBrush" Value="#0f92fe" />
+        <Setter Property="BorderThickness" Value="0,3,0,0" />
         <Setter Property="Padding" Value="0,0,2,0" />
         <Setter Property="Margin" Value="1,2,1,0" />
         <Setter Property="Background" Value="#495359" />
